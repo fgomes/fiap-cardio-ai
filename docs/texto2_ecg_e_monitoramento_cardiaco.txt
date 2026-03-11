@@ -1,0 +1,132 @@
+ELETROCARDIOGRAMA E MONITORAMENTO CARDÍACO: FUNDAMENTOS E APLICAÇÕES EM INTELIGÊNCIA ARTIFICIAL
+
+1. INTRODUÇÃO AO ELETROCARDIOGRAMA
+
+O eletrocardiograma (ECG) é o registro gráfico da atividade elétrica do coração ao longo do tempo. Desenvolvido por Willem Einthoven no início do século XX — trabalho pelo qual recebeu o Prêmio Nobel de Fisiologia ou Medicina em 1924 —, o ECG permanece até hoje como um dos exames mais utilizados na medicina, sendo essencial na prática cardiológica, em emergências e na medicina preventiva.
+
+O coração gera impulsos elétricos que se propagam de forma ordenada pelo músculo cardíaco, promovendo a contração coordenada das câmaras. Esses impulsos, quando captados por eletrodos posicionados na superfície corporal, geram deflexões características que formam o traçado eletrocardiográfico.
+
+2. BASES FISIOLÓGICAS DO ECG
+
+2.1 Sistema de Condução Cardíaca
+
+O impulso elétrico tem origem no nó sinoatrial (NSA), localizado na parede superior do átrio direito. O NSA é o marcapasso fisiológico do coração, com frequência intrínseca de 60 a 100 batimentos por minuto (bpm). O impulso se propaga pelos átrios até o nó atrioventricular (NAV), onde sofre retardo fisiológico que permite o esvaziamento atrial antes da contração ventricular.
+
+Do NAV, o impulso segue pelo feixe de His, ramifica-se nos ramos direito e esquerdo do feixe de His e se distribui pela rede de Purkinje, ativando o miocárdio ventricular de forma sincronizada.
+
+2.2 Componentes do Traçado ECG
+
+Onda P: Representa a despolarização atrial. Normalmente é positiva nas derivações DI, DII e aVF, com duração menor que 120 ms e amplitude menor que 2,5 mm.
+
+Intervalo PR: Corresponde ao tempo de condução do impulso desde o início da despolarização atrial até o início da despolarização ventricular. Valores normais: 120-200 ms (3-5 mm a 25 mm/s).
+
+Complexo QRS: Representa a despolarização ventricular. A onda Q é a primeira deflexão negativa; a onda R é a primeira deflexão positiva; a onda S é a deflexão negativa que se segue à onda R. Duração normal: menor que 120 ms.
+
+Segmento ST: Corresponde ao intervalo entre o fim da despolarização e o início da repolarização ventricular. É isoelétrico no ECG normal. Alterações do segmento ST (supradesnivelamento ou infradesnivelamento) são de grande relevância clínica.
+
+Onda T: Representa a repolarização ventricular. Normalmente é positiva nas derivações DI, DII e V4-V6.
+
+Intervalo QT: Representa a duração total da atividade elétrica ventricular (despolarização e repolarização). O QT corrigido (QTc) é calculado pela fórmula de Bazett: QTc = QT / √RR. Valores normais: menor que 440 ms em homens e menor que 460 ms em mulheres.
+
+3. ALTERAÇÕES ELETROCARDIOGRÁFICAS RELEVANTES
+
+3.1 Isquemia e Infarto Miocárdico
+
+Isquemia subendocárdica: infradesnivelamento do segmento ST e/ou inversão da onda T nas derivações que "veem" a região isquêmica.
+
+Isquemia transmural aguda (IAMCSST): supradesnivelamento do segmento ST ≥ 1 mm em duas derivações contíguas dos membros ou ≥ 2 mm em derivações precordiais, sugestivo de oclusão coronariana aguda.
+
+IAM estabelecido: presença de ondas Q patológicas (duração ≥ 40 ms, amplitude ≥ 25% da onda R subsequente) indicando área de necrose miocárdica.
+
+3.2 Arritmias
+
+Fibrilação Atrial (FA): ausência de ondas P definidas, substituídas por oscilações irregulares da linha de base (ondas f), com resposta ventricular irregular. É a arritmia sustentada mais comum.
+
+Flutter Atrial: atividade atrial regular a 250-350 bpm, com morfologia em "dentes de serra" (ondas F) nas derivações inferiores, geralmente com condução AV fixa (2:1, 3:1 ou 4:1).
+
+Taquicardia Ventricular (TV): frequência ventricular acima de 100 bpm, com complexos QRS alargados (≥ 120 ms) e morfologia aberrante, geralmente por reentrada no miocárdio ventricular.
+
+Fibrilação Ventricular (FV): atividade elétrica ventricular caótica, sem complexos QRS identificáveis. Constitui emergência médica com parada cardiorrespiratória.
+
+Bloqueios de Ramo: Bloqueio de Ramo Direito (BRD) e Bloqueio de Ramo Esquerdo (BRE) caracterizam-se por alargamento do QRS (≥ 120 ms) com morfologias específicas.
+
+3.3 Hipertrofia Ventricular
+
+Hipertrofia Ventricular Esquerda (HVE): critérios de Sokolow-Lyon (SV1 + RV5 ou RV6 ≥ 35 mm) ou de Cornell (RaVL + SV3 > 28 mm em homens e > 20 mm em mulheres). Associada à hipertensão arterial crônica, miocardiopatia hipertrófica e estenose aórtica.
+
+4. ECG DE 12 DERIVAÇÕES: INTERPRETAÇÃO SISTEMÁTICA
+
+A interpretação do ECG deve ser realizada de forma sistemática:
+
+1. Frequência cardíaca: calculada pela fórmula 1500/nº de quadrinhos entre dois complexos QRS consecutivos (ou 300/nº de quadradões).
+2. Regularidade do ritmo: avaliar se os intervalos RR são regulares ou irregulares.
+3. Onda P: presença, morfologia e relação com o QRS.
+4. Intervalo PR: dentro dos limites normais, encurtado ou prolongado.
+5. Complexo QRS: duração, morfologia, amplitude e presença de ondas Q.
+6. Segmento ST: isoelétrico, supradesnivelado ou infradesnivelado.
+7. Onda T: morfologia e polaridade.
+8. Intervalo QT: calculado e corrigido pela frequência cardíaca.
+
+5. MONITORAMENTO CARDÍACO CONTÍNUO
+
+5.1 Holter de 24-72 Horas
+
+O Holter é um sistema de monitoramento ambulatorial que registra continuamente o ECG por 24 a 72 horas (ou mais) enquanto o paciente realiza suas atividades habituais. É indicado para investigação de palpitações, síncope, tontura e suspeita de arritmias.
+
+5.2 Monitor de Eventos
+
+Dispositivos que registram o ECG somente quando ativados pelo paciente (ao sentir os sintomas) ou automaticamente quando detectam arritmias. Úteis para sintomas intermitentes e pouco frequentes.
+
+5.3 Dispositivos Implantáveis de Monitoramento (Loop Recorder)
+
+Monitor cardíaco implantável subcutâneo que registra o ritmo cardíaco continuamente por até 3 anos. Indicado em casos de síncope de causa inexplicada após avaliação inicial.
+
+5.4 IoT e Wearables na Cardiologia
+
+Dispositivos vestíveis (smartwatches, patches cardíacos, cintas torácicas) com tecnologia de IoT permitem o monitoramento contínuo e remoto da frequência cardíaca, saturação de oxigênio, variabilidade da frequência cardíaca (VFC) e detecção de arritmias em tempo real. Alguns dispositivos aprovados pelas agências regulatórias são capazes de registrar ECGs de derivação única com qualidade diagnóstica.
+
+A transmissão de dados em tempo real para plataformas de saúde digital possibilita o acompanhamento remoto de pacientes de alto risco e a detecção precoce de eventos cardíacos agudos.
+
+6. INTELIGÊNCIA ARTIFICIAL E ECG
+
+6.1 Redes Neurais para Interpretação de ECG
+
+O desenvolvimento de redes neurais convolucionais (CNN) e redes neurais recorrentes (RNN/LSTM) para análise automática de ECGs representa uma das aplicações mais promissoras da IA em cardiologia.
+
+Estudos publicados em revistas de alto impacto, como o Nature Medicine, demonstraram que algoritmos de deep learning treinados em grandes bancos de ECGs são capazes de:
+- Identificar fibrilação atrial com sensibilidade e especificidade superiores a 90%
+- Detectar disfunção ventricular esquerda assintomática por meio de alterações sutis no ECG não perceptíveis ao olho humano
+- Estratificar risco de mortalidade cardiovascular a partir do traçado eletrocardiográfico
+- Identificar distúrbios eletrolíticos como hipercalemia e hipocalemia
+
+6.2 Processamento de Sinal ECG
+
+O sinal ECG bruto requer pré-processamento antes da análise por algoritmos de IA:
+- Filtragem de ruído (filtro passa-baixa e passa-alta)
+- Remoção de artefatos de movimento e interferência elétrica
+- Normalização do sinal
+- Segmentação em ciclos cardíacos individuais
+- Extração de características (features)
+
+6.3 Aplicações de NLP em Laudos de ECG
+
+O processamento de linguagem natural permite extrair informações estruturadas de laudos de ECG em formato texto, identificar padrões diagnósticos, correlacionar achados eletrocardiográficos com desfechos clínicos e construir bases de conhecimento para sistemas de suporte à decisão.
+
+6.4 Visão Computacional em Imagens de ECG
+
+Quando o ECG está disponível apenas em formato de imagem (digitalizada ou impressa), técnicas de visão computacional — como detecção de bordas, segmentação de ondas e reconhecimento de padrões — permitem a extração e análise automática do traçado.
+
+7. VARIABILIDADE DA FREQUÊNCIA CARDÍACA (VFC)
+
+A VFC é a variação temporal entre batimentos cardíacos consecutivos e reflete o equilíbrio autonômico. Redução da VFC está associada a maior risco cardiovascular, diabetes, insuficiência cardíaca e mortalidade. A VFC pode ser analisada no domínio do tempo (SDNN, RMSSD) e da frequência (LF, HF, LF/HF), sendo útil em estudos de estresse, recuperação e monitoramento de atletas.
+
+8. PERSPECTIVAS FUTURAS
+
+A integração de ECG com dados clínicos, exames laboratoriais, imagens cardíacas e dados de wearables em modelos multimodais de IA promete revolucionar a cardiologia preventiva e o monitoramento remoto de pacientes. Sistemas de alertas inteligentes, diagnóstico automático em tempo real e telemedicina cardíaca baseada em IA são perspectivas que já se concretizam em parte e continuarão a evoluir nas próximas décadas.
+
+REFERÊNCIAS
+1. Dubin D. Interpretação Rápida do ECG. 6ª ed. São Paulo: Cover Publishing; 2007.
+2. Goldberger AL, Goldberger ZD, Shvilkin A. Goldberger's Clinical Electrocardiography. 9th ed. Philadelphia: Elsevier; 2018.
+3. Hannun AY, et al. Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network. Nat Med. 2019;25:65-69.
+4. Attia ZI, et al. Screening for cardiac contractile dysfunction using an artificial intelligence-enabled electrocardiogram. Nat Med. 2019;25:70-74.
+5. Sociedade Brasileira de Cardiologia. Diretriz de Interpretação do Eletrocardiograma de Repouso. Arq Bras Cardiol. 2003;80(Suppl 2):1-18.

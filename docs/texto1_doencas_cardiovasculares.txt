@@ -1,0 +1,90 @@
+DOENÇAS CARDIOVASCULARES: PANORAMA EPIDEMIOLÓGICO E CLÍNICO
+
+1. INTRODUÇÃO
+
+As doenças cardiovasculares (DCV) constituem a principal causa de morbimortalidade no mundo e no Brasil, respondendo por aproximadamente 31% de todos os óbitos globais segundo dados da Organização Mundial da Saúde (OMS). No Brasil, dados do Sistema de Informações sobre Mortalidade (SIM) do Ministério da Saúde apontam que as DCV são responsáveis por mais de 300.000 mortes anuais, representando impacto expressivo tanto para o sistema de saúde quanto para a economia nacional.
+
+A cardiopatia isquêmica (infarto agudo do miocárdio e angina) e o acidente vascular cerebral (AVC) são as manifestações mais prevalentes e letais dentro do espectro das doenças cardiovasculares. Contudo, insuficiência cardíaca, arritmias, miocardiopatias, valvopatias e doenças arteriais periféricas também compõem um quadro clínico amplo e heterogêneo, exigindo abordagens diagnósticas e terapêuticas específicas.
+
+2. FATORES DE RISCO CARDIOVASCULAR
+
+A compreensão dos fatores de risco é fundamental para a prevenção primária e secundária das DCV. Esses fatores são classicamente divididos em modificáveis e não modificáveis.
+
+2.1 Fatores Não Modificáveis
+
+Idade: O risco cardiovascular aumenta progressivamente com a idade. Homens acima de 45 anos e mulheres acima de 55 anos apresentam risco substancialmente elevado.
+
+Sexo: O sexo masculino confere maior predisposição às DCV nas faixas etárias mais jovens. Após a menopausa, o risco feminino equipara-se ao masculino, em decorrência da perda do efeito protetor estrogênico.
+
+Hereditariedade: A história familiar de DCV prematura (antes dos 55 anos em parentes masculinos de primeiro grau e antes dos 65 anos em parentes femininos) é considerada fator de risco independente.
+
+Etnia: Certas populações, como afrodescendentes, apresentam maior prevalência de hipertensão arterial e, consequentemente, maior risco cardiovascular.
+
+2.2 Fatores Modificáveis
+
+Hipertensão Arterial Sistêmica (HAS): A HAS é o principal fator de risco modificável para DCV, AVC e doença renal crônica. Define-se como pressão arterial sistólica maior ou igual a 140 mmHg e/ou pressão arterial diastólica maior ou igual a 90 mmHg em medições repetidas. O controle pressórico adequado reduz significativamente o risco de eventos cardiovasculares.
+
+Dislipidemia: O acúmulo de lipoproteínas de baixa densidade (LDL-colesterol) na parede arterial constitui o principal mecanismo fisiopatológico da aterosclerose. Valores de colesterol total acima de 200 mg/dL e LDL acima de 130 mg/dL são associados a risco aumentado.
+
+Diabetes Mellitus: A hiperglicemia crônica lesa o endotélio vascular e acelera o processo aterosclerótico. Pacientes diabéticos apresentam risco cardiovascular de duas a quatro vezes superior ao da população geral.
+
+Tabagismo: O tabaco é responsável por dano endotelial direto, aumento da viscosidade sanguínea, vasoconstrição e redução do HDL-colesterol. O risco cardiovascular cai significativamente após a cessação do tabagismo.
+
+Obesidade e Sedentarismo: O índice de massa corporal (IMC) acima de 30 kg/m² e a circunferência abdominal elevada estão associados à síndrome metabólica, inflamação sistêmica e resistência à insulina, todos contribuindo para o aumento do risco cardiovascular.
+
+Estresse Psicossocial: Evidências crescentes demonstram a relação entre estresse crônico, depressão e ansiedade com o desenvolvimento e a piora de DCV.
+
+3. SINTOMAS E APRESENTAÇÕES CLÍNICAS
+
+3.1 Angina do Peito
+
+A angina é a manifestação clínica da isquemia miocárdica e pode ser classificada em estável e instável. A angina estável típica caracteriza-se por:
+- Dor ou desconforto retroesternal
+- Irradiação para o braço esquerdo, mandíbula ou dorso
+- Precipitação por esforço físico ou estresse emocional
+- Alívio com repouso ou uso de nitratos
+- Duração inferior a 20 minutos
+
+A angina instável e o infarto agudo do miocárdio (IAM) constituem as síndromes coronarianas agudas (SCA), situações de emergência médica. O IAM com supradesnivelamento do segmento ST (IAMCSST) requer tratamento imediato com reperfusão coronariana.
+
+3.2 Insuficiência Cardíaca
+
+A insuficiência cardíaca (IC) é uma síndrome clínica complexa resultante de alteração estrutural ou funcional do coração que compromete sua capacidade de encher ou ejetar sangue adequadamente. Os sintomas principais incluem:
+- Dispneia (falta de ar) aos esforços ou em repouso
+- Ortopneia (dispneia na posição deitada)
+- Edema de membros inferiores
+- Fadiga e intolerância ao exercício
+- Congestão pulmonar e sistêmica
+
+3.3 Arritmias Cardíacas
+
+Arritmias são distúrbios do ritmo cardíaco que podem variar de condições benignas a potencialmente letais. A fibrilação atrial (FA) é a arritmia sustentada mais comum na prática clínica, afetando cerca de 1-2% da população geral e aumentando significativamente o risco de AVC cardioembólico.
+
+4. DIAGNÓSTICO
+
+O diagnóstico das DCV baseia-se em:
+
+4.1 Eletrocardiograma (ECG)
+O ECG é o exame inicial fundamental na avaliação cardiovascular. Permite identificar arritmias, bloqueios de condução, isquemia miocárdica e hipertrofia ventricular. O ECG de 12 derivações fornece informações espaciais sobre a atividade elétrica cardíaca.
+
+4.2 Exames Laboratoriais
+Incluem dosagem de enzimas cardíacas (troponina, CK-MB), perfil lipídico, glicemia, hemograma e marcadores inflamatórios como proteína C-reativa (PCR).
+
+4.3 Ecocardiograma
+O ecocardiograma transtorácico (ETT) é o método de imagem mais utilizado na cardiologia. Permite avaliar estrutura e função cardíaca, incluindo fração de ejeção ventricular, morfologia valvar e grandes vasos.
+
+5. INTELIGÊNCIA ARTIFICIAL NA CARDIOLOGIA
+
+A Inteligência Artificial (IA) tem transformado a prática cardiológica, oferecendo ferramentas para análise de grandes volumes de dados clínicos, interpretação automática de ECGs, análise de imagens ecocardiográficas e tomográficas, estratificação de risco e suporte à decisão clínica.
+
+Algoritmos de Machine Learning treinados em datasets de pacientes cardíacos têm demonstrado desempenho comparável ou superior ao de cardiologistas experientes na identificação de padrões de isquemia, arritmias e disfunção ventricular. O processamento de linguagem natural (PLN/NLP) permite extrair informações estruturadas de prontuários eletrônicos e literatura médica. A visão computacional aplicada a imagens cardíacas possibilita a detecção precoce de alterações estruturais e funcionais do coração.
+
+6. EPIDEMIOLOGIA NO BRASIL
+
+Segundo o Ministério da Saúde, as doenças do aparelho circulatório representam a principal causa de internações e mortes no SUS. A prevalência de hipertensão arterial no Brasil supera 30% da população adulta, o diabetes atinge cerca de 10% dos adultos e a obesidade já afeta mais de 20% da população. Esse cenário reforça a urgência de estratégias inovadoras de prevenção, diagnóstico precoce e tratamento das doenças cardiovasculares.
+
+REFERÊNCIAS
+1. World Health Organization. Cardiovascular diseases (CVDs). Fact Sheet. Geneva: WHO, 2023.
+2. Ministério da Saúde. Doenças cardiovasculares. Brasília: MS, 2022.
+3. Sociedade Brasileira de Cardiologia. Diretriz Brasileira de Hipertensão Arterial. Arq Bras Cardiol, 2020.
+4. Topol EJ. High-performance medicine: the convergence of human and artificial intelligence. Nat Med. 2019;25:44-56.

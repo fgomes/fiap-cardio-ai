@@ -15,7 +15,7 @@ Nesta **Fase 1 — Batimentos de Dados**, o objetivo é levantar, organizar e do
 |---|---|---|---|
 | 1 | 📊 Numérico (IoT) | 500 registros de pacientes | Machine Learning / Predição |
 | 2 | 📝 Textual (NLP) | 2 textos médicos (.txt) | Processamento de Linguagem Natural |
-| 3 | 🖼️ Visual (VC) | 102 imagens de ECG (.png) | Visão Computacional |
+| 3 | 🖼️ Visual (VC) | 102 imagens de ECG (.png) + dataset externo de Raio-X torácico | Visão Computacional |
 
 ---
 
@@ -30,11 +30,15 @@ cardioIA/
 │   └── texto2_ecg_e_monitoramento.txt      # Texto médico 2 — ECG e Monitoramento
 └── assets/
     └── images/
-        ├── ecg_normal_001.png              # ECG: Ritmo Sinusal Normal
-        ├── ecg_stemi_001.png               # ECG: IAMCSST
-        ├── ecg_ischemia_001.png            # ECG: Isquemia
-        ├── ecg_afib_001.png                # ECG: Fibrilação Atrial
-        └── ...                             # (102 imagens no total)
+        ├── ecg/                            # Imagens de ECG (geradas sinteticamente)
+        │   ├── ecg_normal_001.png          # ECG: Ritmo Sinusal Normal
+        │   ├── ecg_stemi_001.png           # ECG: IAMCSST
+        │   ├── ecg_ischemia_001.png        # ECG: Isquemia
+        │   ├── ecg_afib_001.png            # ECG: Fibrilação Atrial
+        │   └── ...                         # (102 imagens no total)
+        └── lung-x-ray/                     # Raio-X torácico (Kermany et al., 2018)
+            ├── NORMAL/                     # Radiografias sem alterações
+            └── PNEUMONIA/                  # Radiografias com infiltrado pulmonar
 ```
 
 ---
@@ -151,7 +155,9 @@ O processamento automatizado de textos médicos é estratégico porque a maior p
 
 ## 🖼️ Parte 3 — Dados Visuais (Visão Computacional)
 
-### Descrição das Imagens
+### Parte 3A — Imagens de ECG (geradas sinteticamente)
+
+#### Descrição das Imagens
 
 Foram reunidas **102 imagens sintéticas de ECG** (Eletrocardiograma) em formato `.png`, organizadas por tipo/patologia:
 
@@ -169,26 +175,48 @@ Foram reunidas **102 imagens sintéticas de ECG** (Eletrocardiograma) em formato
 
 As imagens foram geradas sinteticamente com bibliotecas Python (Pillow), respeitando as morfologias clínicas de cada condição cardíaca, com grade eletrocardiográfica padrão e variações realistas entre exemplares da mesma categoria.
 
-### Aplicações de Visão Computacional
+---
 
-#### 1. Classificação de Padrões (Image Classification)
-Redes neurais convolucionais (CNN) como ResNet, EfficientNet ou Vision Transformers (ViT) podem ser treinadas para classificar automaticamente o tipo de ECG — normal, IAMCSST, FA, etc. — atingindo desempenho comparável ao de cardiologistas em estudos publicados em revistas como Nature Medicine.
+### Parte 3B — Imagens de Raio-X Torácico (fonte externa)
 
-#### 2. Detecção de Objetos e Segmentação de Ondas (Object Detection)
-Modelos como YOLO ou Mask R-CNN podem ser adaptados para detectar e segmentar as ondas individuais do ECG (P, QRS, T, segmento ST), permitindo medição automática de intervalos e amplitudes. Isso é equivalente ao trabalho manual de um técnico treinado em ECG.
+#### Descrição do Dataset
 
-#### 3. Detecção de Anomalias (Anomaly Detection)
-Autoencoders e modelos generativos (GANs, VAEs) treinados em ECGs normais podem identificar traçados anômalos com base na diferença de reconstrução, sendo úteis para alertas precoces em monitoramento contínuo.
+Como fonte complementar de dados visuais, o projeto referencia o dataset público **"Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification"**, disponível no repositório Mendeley Data:
 
-#### 4. Reconhecimento de Padrões Temporais (Temporal Pattern Recognition)
-O ECG é um sinal temporal. Redes LSTM e Transformer aplicadas a sequências de pixels ou sinais extraídos das imagens podem capturar padrões temporais de arritmias e alterações de repolarização.
+> **Kermany, Daniel; Zhang, Kang; Goldbaum, Michael (2018)**  
+> *Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification*  
+> Mendeley Data, Version 2 — University of California San Diego  
+> DOI: [10.17632/rscbjbr9sj.2](https://doi.org/10.17632/rscbjbr9sj.2) | Licença: **CC BY 4.0**
 
-#### 5. Aumento de Dados (Data Augmentation)
-As imagens sintéticas podem ser augmentadas (rotação, escala, adição de ruído, variação de contraste) para aumentar artificialmente o volume de dados de treinamento, técnica essencial em domínios com dados escassos como a cardiologia.
+O dataset contém radiografias torácicas validadas clinicamente, divididas em conjuntos de treino e teste, com as seguintes classes:
 
-### Justificativa para IA em Saúde
+| Classe | Descrição Clínica |
+|---|---|
+| `NORMAL` | Radiografia torácica sem alterações patológicas |
+| `PNEUMONIA` | Radiografia com infiltrado pulmonar sugestivo de pneumonia (bacteriana ou viral) |
 
-O ECG é realizado bilhões de vezes ao ano no mundo, mas a análise especializada é limitada pela disponibilidade de cardiologistas. Sistemas de Visão Computacional para interpretação automática de ECGs podem democratizar o acesso ao diagnóstico cardiológico de qualidade, especialmente em regiões remotas e países de baixa e média renda, onde a escassez de especialistas é crítica. A integração com dispositivos IoT de monitoramento (smartwatches, patches de ECG) potencializa ainda mais o impacto clínico dessas tecnologias.
+#### Por que imagens de pneumonia num projeto de cardiologia?
+
+A inclusão desse dataset é clinicamente e tecnicamente justificada por três razões principais:
+
+**1. Relevância clínica direta:** Pneumonias graves podem desencadear arritmias, descompensar uma insuficiência cardíaca prévia e até precipitar infarto agudo do miocárdio em pacientes com doença coronariana. O coração e o pulmão são sistemas intimamente interdependentes, e a avaliação radiológica do tórax é um dos exames mais solicitados na triagem de dor torácica e dispneia — os dois sintomas mais prevalentes das emergências cardiológicas.
+
+**2. Diagnóstico diferencial:** Um sistema de IA cardiológico robusto precisa ser capaz de distinguir, a partir de uma radiografia torácica, se a origem do quadro clínico é cardíaca (ex.: congestão pulmonar por IC) ou pulmonar (ex.: pneumonia). Treinar modelos com ambas as categorias enriquece essa capacidade discriminativa.
+
+**3. Qualidade e licença do dataset:** O dataset de Kermany et al. é um dos mais utilizados na literatura de deep learning médico, com imagens validadas por especialistas e licença aberta (CC BY 4.0), sendo ideal para fins acadêmicos e de pesquisa como este projeto.
+
+#### Aplicações de Visão Computacional nas Imagens de Raio-X
+
+- **Classificação binária (Normal vs. Pneumonia):** CNNs como ResNet e DenseNet podem classificar radiografias com alta acurácia, servindo como módulo de triagem automatizada.
+- **Detecção de infiltrados pulmonares:** Modelos de segmentação semântica (U-Net) podem delimitar regiões de consolidação e identificar padrões que diferenciam pneumonia bacteriana de viral.
+- **Avaliação da silhueta cardíaca:** O mesmo modelo pode ser aproveitado para identificar cardiomegalia (aumento da silhueta cardíaca), sinal radiológico clássico de insuficiência cardíaca.
+- **Aprendizado por transferência (Transfer Learning):** Modelos pré-treinados neste dataset público podem ser refinados (fine-tuned) com dados cardiológicos específicos nas fases seguintes do CardioIA, acelerando o desenvolvimento e reduzindo a necessidade de grandes volumes de dados rotulados.
+
+---
+
+### Justificativa Geral para IA em Saúde (Parte 3)
+
+O ECG é realizado bilhões de vezes ao ano no mundo, e a radiografia torácica é igualmente ubíqua. Contudo, a análise especializada de ambos é limitada pela disponibilidade de cardiologistas e radiologistas. Sistemas de Visão Computacional para interpretação automática dessas imagens podem democratizar o acesso ao diagnóstico de qualidade, especialmente em regiões remotas e países de baixa e média renda. A integração com dispositivos IoT de monitoramento (smartwatches, patches de ECG) potencializa ainda mais o impacto clínico dessas tecnologias.
 
 ---
 
@@ -198,6 +226,7 @@ O ECG é realizado bilhões de vezes ao ano no mundo, mas a análise especializa
 - Todos os dados numéricos são **simulados** — não há dados reais de pacientes, eliminando riscos de privacidade e dispensando autorização de comitê de ética (CEP/CONEP) para esta fase.
 - Os textos utilizados são de **domínio público ou uso educacional**.
 - As imagens de ECG são **sintéticas**, geradas algoritmicamente.
+- As imagens de Raio-X são provenientes de dataset público com licença **CC BY 4.0**, permitindo uso acadêmico com devida atribuição aos autores originais.
 
 ### Viés Algorítmico
 - O dataset numérico reflete vieses históricos da literatura cardiológica (sub-representação de mulheres, populações não-europeias).
@@ -224,7 +253,7 @@ O ECG é realizado bilhões de vezes ao ano no mundo, mas a análise especializa
 
 | Nome | RM | Função |
 |---|---|---|
-| [Fernando Gomes da Silva] | RM561534 | Pesquisador e cientista de dados |
+| Fernando Gomes da Silva | RM561534 | Pesquisador e cientista de dados |
 
 ---
 
@@ -238,6 +267,7 @@ O ECG é realizado bilhões de vezes ao ano no mundo, mas a análise especializa
 6. **BVS (Biblioteca Virtual em Saúde)** — [https://bvsalud.org](https://bvsalud.org)
 7. Topol EJ. High-performance medicine: the convergence of human and artificial intelligence. *Nat Med*. 2019;25:44–56.
 8. Hannun AY, et al. Cardiologist-level arrhythmia detection using deep neural networks. *Nat Med*. 2019;25:65–69.
+9. **Kermany DS, Zhang K, Goldbaum M.** Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification. *Mendeley Data*, V2. DOI: 10.17632/rscbjbr9sj.2. University of California San Diego, 2018.
 
 ---
 
