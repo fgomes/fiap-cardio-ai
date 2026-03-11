@@ -224,9 +224,7 @@ O ECG é realizado bilhões de vezes ao ano no mundo, mas a análise especializa
 
 | Nome | RM | Função |
 |---|---|---|
-| [Nome do Aluno 1] | RM000000 | Líder / Cientista de Dados |
-| [Nome do Aluno 2] | RM000000 | Engenharia de Dados |
-| [Nome do Aluno 3] | RM000000 | Documentação e Governança |
+| [Fernando Gomes da Silva] | RM561534 | Pesquisador e cientista de dados |
 
 ---
 
